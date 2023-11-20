@@ -189,6 +189,9 @@ section {
 }
 
 /* ABOUT */
+#about {
+    display: flex;
+}
 .sub-title {
     font-size: 60px;
     font-weight: 600;
