@@ -8,6 +8,7 @@
     
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24954c5472.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="mediaqueries.css">
   </head>
   <body>
@@ -17,7 +18,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experiences">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -63,12 +64,19 @@
     <section id="about">
         <div class="about-col-1">
             <h1 class="sub-title">About Me</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p>From a young age, I was drawn to dismantling toys to understand how they worked and fix them. These early experiences sparked my interest in electrical engineering.</p>
+                <p>That’s why I finished my undergrad study in electrical engineering, where I delved into the world of circuits, energy systems, and automation.</p>
+                <p>Fortuanetly, I got to intern at a robotics company and worked on projects that greatly improved automated industrial processes with Python.</p>
+                <p>Gradually, I couldn't ignore the ever-expanding role of software in these systems.</p>
+                <p>So, here I am today, embarking on a master's degree in computer science at NEU.</p>
+                <p>I envision a future where machines can not only operate efficiently but also adapt, learn, and make intelligent decisions.</p>
+                <p>And I want to be at the forefront of this transformation.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                    <p class="tab-links" onclick="opentab('others')">Others</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -79,21 +87,104 @@
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2023 - Current</span><br>Master of Science in Computer Science at Northeastern University</li>
-                        <li><span>2019 - 2023</span><br>Bacherlor of Engineering in Electrical Engineering at Shanghai University</li>
+                        <li><span>2023/09 - Current</span><br>Master of Science in Computer Science at Northeastern University</li>
+                        <li><span>2019/09 - 2023/06</span><br>Bacherlor of Engineering in Electrical Engineering at Shanghai University</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experiences">
                     <ul>
-                        <li><span>2022/07 - 2022/12</span><br>Engineer Intern at ABB, Ltd</li>
-                        <li><span>2021/08 - 2021/09</span><br>Electronic Intern at Shanghai Bright Power Semiconductor Co., Ltd</li>
+                        <ul>
+                            <li>
+                                <span>2022/07 - 2022/12</span><br>
+                                <strong>Engineer Intern at ABB, Ltd</strong>
+                                <ul>
+                                    <li>
+                                        Developed an automated testing program using C# to streamline thermal testing procedures, minimizing manual redundancy
+                                    </li>
+                                    <li>
+                                        Implemented real-time temperature monitoring and hardware alignment for robotic movements using Python for data analysis, resulting in increased operational efficiency and reduced manual intervention
+                                    </li>
+                                    <li>
+                                        Ensured efficient data management across multiple tables by conducting comprehensive data storage and analysis through the utilization of SQL scripts on a MySQL database containing more than 1000 rows
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>2021/08 - 2021/09</span><br>
+                                <strong>Electronic Intern at Shanghai Bright Power Semiconductor Co., Ltd</strong>
+                                <ul>
+                                    <li>
+                                        Designed and compared different testing circuits to ensure better performance of the chips
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="others">
+                    <ul>
+                        <li>
+                            An avid lover of the Great Outdoors with a passion for Running
+                            <ul>
+                                <li>Completed a Half Marathon at Shanghai in 2023/05</li>
+                                <li>Clocked over 900 Km+ right now for more than one year</li>
+                            </ul>
+                        </li>
+                        <li>
+                            A Hiphop and R&B lover
+                        </li>
+                        <li>
+                            Bilingual
+                            <ul>
+                                <li>TOEFL: 111</li>
+                                <li>Self-Learning Spanish...</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
         </div>
     </section>
     <!---------------projects---------------->
     <section id="projects">
-
+        <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-brands fa-trello"></i>
+                    <h2>Fullstack Trello clone</h2>
+                    <ul>
+                        <li>Utilized Angular and TypeScript to build a user-friendly client-side application</li>
+                        <li>Employed Node.js in conjunction with Express to develop backend, and leveraged MongoDB as the database solution for storing
+                            and managing project data</li>
+                        <li>Managed data flow and application state with NgRx middleware, reducers, and observable-based state management</li>
+                        <li>Implemented real-time notification and updates using WebSocket functionality through Socket.IO</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Student Learning Management Platform</h2>
+                    <ul>
+                        <li>Architected the Student Learning Management Platform, leveraging Spring Boot, Spring MVC, JPA, Hibernate, and MySQL to
+                            establish RESTful APIs</li>
+                        <li>Designed and developed a responsive and user-friendly frontend using React.js, enhancing the educational experience</li>
+                        <li>Implemented user registration, complete with email verification capabilities, ensuring security and user privacy, and making use
+                            of Spring Security to safeguard sensitive data</li>
+                        <li>Deployed the system on Google Cloud servers for scalable and reliable performance</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Bird Detection using Neural Network and Deployment on FPGA</h2>
+                    <ul>
+                        <li>Leveraged a neural network deep learning model in Python and TensorFlow to achieve real-time bird detection</li>
+                        <li>Conducted model training on the Google Cloud Platform, using a dataset comprising more than 2000 bird images</li>
+                        <li>Fine-tuned YOLOv3 model parameters, resulting in a more than 10% improvement in model recall and enhanced precision</li>
+                        <li>Successfully deployed the training model on an FPGA (Xilinx KV260), implemented the neural network model on the FPGA
+                            within the Linux System, achieved an impressive 85% precision rate and a processing speed of 30 frames per second (fps)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="index.js"></script>
   </body>
