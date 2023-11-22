@@ -44,6 +44,8 @@
                     Contact Info
                 </button>
             </div>
+            <br>
+            <p><i class="fa-solid fa-location-dot"></i> Seattle, WA</p>
         </div>
         <div class="socials-container">
             <img 
@@ -64,7 +66,8 @@
     <section id="about">
         <div class="about-col-1">
             <h1 class="sub-title">About Me</h1>
-                <p>From a young age, I was drawn to dismantling toys to understand how they worked and fix them. These early experiences sparked my interest in electrical engineering.</p>
+                <p>From a young age, I was drawn to dismantling toys to understand how they worked and fix them.</p>
+                <p>These early experiences sparked my interest in electrical engineering.</p>
                 <p>That’s why I finished my undergrad study in electrical engineering, where I delved into the world of circuits, energy systems, and automation.</p>
                 <p>But, gradually I couldn't ignore the ever-expanding role of software in these systems.</p>
                 <p>So, here I am today, embarking on a master's degree in computer science at NEU.</p>
@@ -75,13 +78,13 @@
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
-                    <p class="tab-links" onclick="opentab('others')">Others</p>
+                    <p class="tab-links" onclick="opentab('more')">More</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span><strong>Programming Langauges</strong></span><br>Java, JavaScript, HTML/CSS, SQL, Python, C/C++ , TypeScript, C#, MATLAB</li>
-                        <li><span><strong>FrameWorks</strong></span><br>Spring Boot, React, Hibernate, Node.js, Angular, Vue, JUnit, Tensorflow, Flask, Django</li>
-                        <li><span><strong>Tools</strong></span><br>Git, Docker, AWS, Maven, MongoDB, MySQL, Postman, npm, Ubuntu, Linux, Shell</li>
+                        <li><i class="fa-brands fa-java"></i><span><strong> Programming Langauges</strong></span><br>Java, JavaScript, HTML/CSS, SQL, Python, C/C++ , TypeScript, C#, MATLAB</li>
+                        <li><i class="fa-brands fa-react"></i><span><strong> FrameWorks</strong></span><br>Spring Boot, React, Hibernate, Node.js, Angular, Vue, JUnit, Tensorflow, Flask, Django</li>
+                        <li><i class="fa-brands fa-linux"></i><span><strong> Tools</strong></span><br>Git, Docker, AWS, Maven, MongoDB, MySQL, Postman, npm, Ubuntu, Linux, Shell</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -130,10 +133,10 @@
                         </ul>
                     </ul>
                 </div>
-                <div class="tab-contents" id="others">
+                <div class="tab-contents" id="more">
                     <ul>
                         <li>
-                            <span><strong>A Running Lover</strong></span>
+                            <span><i class="fa-solid fa-person-running"></i><strong> A Running Lover</strong></span>
                             <ul>
                                 <li>Completed my first Half Marathon in Shanghai in 2023/05</li>
                                 <li>Finished 900 km+ right now for more than one year of running</li>
@@ -141,14 +144,17 @@
                             </ul>
                         </li>
                         <li>
-                            <span><strong>A Hiphop and R&B Lover</strong></span>
+                            <span><i class="fa-solid fa-music"></i><strong> A Hiphop and R&B Lover</strong></span>
                         </li>
                         <li>
-                            <span><strong>Langauges</strong></span>
+                            <span><i class="fa-solid fa-globe"></i><strong> Langauges</strong></span>
                             <ul>
                                 <li>TOEFL: 111(120)</li>
                                 <li>Self-Learning Spanish...</li>
                             </ul>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-venus"></i><strong> Women In Tech</strong></span>
                         </li>
                     </ul>
                 </div>
@@ -211,19 +217,38 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
     </section>
     <div class="copyright">
         <p>Copyright © Kyra Lu <i class="fa-solid fa-heart"></i></p>
-    </div>
+    </div>   
     <script src="index.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzwJVLBHbCwy4e-Tri3FAJVLYeWBkHnr1JB3sLF7Ao5EHe_uBPrzz6gdUjjIPTgklCAfg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
   </body>
 </html>
