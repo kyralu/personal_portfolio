@@ -41,7 +41,12 @@ Add screenshots below showing,
 Update the README to answer the following questions:
 
  1. Identify the interactive JavaScript elements of your website and explain how you implemented them.
+ - The form submission in the Contact Section, it allows the users to submit their name, email and the message they want to leave to me. This form is implemented by JavaScript to handle the submission process, including displaying a success message and resetting the form.
+ - The go-back-top button when clicked, will smoothly scroll the page to the top. It simply uses a little bit of Javascript to set the scrollTop attribute to zero to achieve that kind of effect.
  2. What specific feedback did the career services people give you about your resume?
+   Be more specific on the tech stacks that I used, and more logical and clear on what I did in each project and internships, which can be understandable by the non-tech background people.
  3. What aspects of this project did you find particularly challenging and why? Explain how you overcame them.
+   I feel like the whole layout of this project is probably the most challenging one, especially when creating a visually appealing layout that aligns with personal branding while being user-friendly can be hard. I overcame it by comparing the different effects of some css attributes and some parameters, and also the Balsamic helps a lot, including employing a consistent color scheme, adequate whitespace.
  4. Explain how you created a custom favicon for your page.
+    I think that a woman in tech especially with a computer coding can better describe the figure of myself, so I choose the emoji with a woman using a computera and transform that into a favicon on a favicon converter website.
  5. Write a short essay about what you've learned in this class so far. Think about all the technologies we've used, the activities you've done, the programs you've made, and how far you've come. Describe your experiences in at least 20 sentences with specific examples from this course.
