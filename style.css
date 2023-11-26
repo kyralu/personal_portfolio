@@ -16,7 +16,7 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: #B5ABAB;
 }
 
 /* Transition */
@@ -256,7 +256,7 @@ section {
 }
 
 .tab-contents ul li span {
-    color: #b54769;
+    color: #FD6897;
     font-size: 14px;
 }
 
