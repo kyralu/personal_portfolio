@@ -34,9 +34,16 @@ Purchase a domain name for your site and link it to your GitHub pages. I've used
 Add screenshots below showing,
 
 * Your app running on GitHub Pages
+  ![screenshot_1](screenshot_1.jpg)
+  ![screenshot_2](screenshot_2.jpg)
+  ![screenshot_3](screenshot_3.jpg)
+  ![screenshot_4](screenshot_4.jpg)
 * Your html validation
+  ![html.jpg](html.jpg)
 * Your code coverage
+  ![code_coverage](code_coverage.jpg)
 * Your view testing
+  ![view_testing](view_testing.jpg)
 
 Update the README to answer the following questions:
 
@@ -50,3 +57,8 @@ Update the README to answer the following questions:
  4. Explain how you created a custom favicon for your page.
     I think that a woman in tech especially with a computer coding can better describe the figure of myself, so I choose the emoji with a woman using a computera and transform that into a favicon on a favicon converter website.
  5. Write a short essay about what you've learned in this class so far. Think about all the technologies we've used, the activities you've done, the programs you've made, and how far you've come. Describe your experiences in at least 20 sentences with specific examples from this course.
+   I actually learned a lot from this course using different technologies that I never ever used before, which is a brand-new, exciting and challenging journey to me.
+   One of the most interesting one is probably the pickyourownapi one, I remembered exploring a lot repositories of the public APIs listed on GitHub's public-apis page and chose one that did not require CORS, simplifying the development process. The project involved developing an engaging quiz application that fetched data from the chosen API. This process not only honed my skills in JavaScript and AJAX but also provided a practical understanding of how to retrieve and manipulate data from external sources, which is super useful I think.
+   The other one is definitely gonna be the boba-tea review one, which I spent a lot of time on. Since our group just has two people, each of us really put more work into that. From the UI design to each modules' implementation, we discussed and revised several times. From using the tech stacks that the previous homework involve with, such as the Mongodb to store and retrieve the dataset even including the pictures, as well as displaying them in the way we choose to display as pickyourownapi. We kind of used what we have learned before and made it more user-friendly. And it was such a good hands-on project to us since it is real-life related and maybe for the future, we can use such as a prototype to design and do more complex web development, which can be so useful and handy.
+   Throughout this course, I have not only learned specific technologies and tools but also developed a deeper appreciation for the intricacies of web development. From front-end design using HTML, CSS, and JavaScript to back-end development with Node.js, Express, and MongoDB, every step has been a building block towards becoming a proficient full-stack developer.
+   So, overall, I think the course is a bit challenging but also very instructive and useful to our future, it actually makes me delve more into this subject of computer science and not to mention I gained a lot of knowledge and experience from finishing these homeworks with the help of TAs and the professor.
